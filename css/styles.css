@@ -2410,7 +2410,7 @@ textarea.form-control {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -10125,30 +10125,38 @@ img::-moz-selection {
   -o-background-size: cover;
 }
 
-.masthead {
-  color: white;
-  margin: auto;
-  padding-bottom: 2em;
+.masthead h1{
+  margin: calc(10vh) auto 0 auto;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  animation: neon 1s infinite;
 }
 
-/*
-@media (min-width: 768px) {
-  .masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+@keyframes neon {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
   }
-  .masthead .masthead-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+    0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
   }
-  .masthead .masthead-heading {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
   }
 }
-*/
+
+.masthead p {
+  color: #e5e5e5;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
 #portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;
