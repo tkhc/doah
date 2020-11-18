@@ -10058,7 +10058,7 @@ img::-moz-selection {
   font-size: 0.75rem;
   color: #000;
   text-transform: uppercase;
-  background-color: #fed136;
+  background-color: #FCA311;
   border: 0;
 }
 #mainNav .navbar-brand {
@@ -10424,7 +10424,7 @@ img::-moz-selection {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../assets/img/camper.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
