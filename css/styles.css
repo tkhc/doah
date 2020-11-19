@@ -160,13 +160,13 @@ sup {
 }
 
 a {
-  color: #050505;
+  color: #FCA311;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #e6b301;
-  text-decoration: underline;
+  color: #14213D;
+  text-decoration: none;
 }
 
 a:not([href]):not([class]) {
@@ -2410,7 +2410,7 @@ textarea.form-control {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.5rem;
+  border-radius: 15px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -10296,11 +10296,19 @@ img::-moz-selection {
   height: 80px;
   margin-left: 0;
   text-align: center;
-  color: white;
-  border: 2px solid #e5e5e5;
   border-radius: 50%;
-  background: linear-gradient(#FCA311, #E5E);
+  background-color: #e5e5e5;
+  box-shadow:
+  inset 0 0 30px #fff,
+  inset 20px 0 80px #f0f,
+  inset -20px 0 80px #0ff,
+  inset 20px 0 30px #f0f,
+  inset -20px 0 30px #0ff,
+  0 0 50px #fff,
+  -10px 0 30px #f0f,
+  10px 0 30px #0ff;
 }
+
 .timeline > li .timeline-image h4 {
   font-size: 10px;
   line-height: 14px;
@@ -10500,14 +10508,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 /*custom button for homepage*/
 .begin {
   text-decoration: none;
-  border: 1px solid rgb(146, 148, 248);
-  background-color: #14213d;
+  border: 1px rgb(252, 163, 17, 0.9);
+  background-color: rgb(20, 33, 61, 0.9);
   position: relative;
   overflow: hidden;
-}
-
-.begin:hover {
-  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 }
 
 .begin:before {
@@ -10520,12 +10527,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   background: linear-gradient(
     120deg,
     transparent,
-    rgba(146, 148, 248, 0.4),
+    rgba(252, 163, 17, 0.4),
     transparent
   );
-  transition: all 650ms;
+  transition: all 1s;
 }
 
 .begin:hover:before {
   left: 100%;
 }
+
